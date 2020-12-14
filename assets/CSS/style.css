@@ -146,7 +146,6 @@ header {
       grid-template-columns: auto auto;
       grid-gap: 0;
       text-align: center;
-      /*border: 1px solid yellow;*/
   }
 
   .work-grid img{
@@ -161,14 +160,14 @@ header {
   .work-grid-item{
       height:100%;
       width:100%;
-      padding-top:200px;
   }
 
   .work-grid h3{
     background-color: yellow;
     color: darkblue;
     width:75%;  
-    text-align: right;      
+    text-align: right;     
+    align-items: center; 
   }
 
   .work-grid h3:active{
@@ -179,29 +178,6 @@ header {
   .item1{
       grid-column-start: 1;
       grid-column-end: 3;
-      
-      background-image:url('../images/purchase-requisition-form.jpg');
-      filter:grayscale(65%);
-  }
-
-  .item2{
-    background-image:url('../images/calculator.jpg');
-    filter:grayscale(65%);
-  }
-
-  .item3{
-    background-image:url('../images/inventory_software.png');
-    filter:grayscale(65%);
-  }
-
-  .item4{
-    background-image:url('../images/iphone_apps.jpg');
-    filter:grayscale(65%);
-  }
-
-  .item5{
-    background-image:url('../images/run_buddy.PNG');
-    filter:grayscale(65%);
   }
 
   .contacts{

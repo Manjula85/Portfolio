@@ -5,12 +5,6 @@
   padding:0;
 }
 
-/*Variable used instead of symbols for ease of use*/
-:root{
-  --primary-color: #ffffff;
-  --seconday-color: #FFFF00;
-}
-
 /*Smooth scrolling when moving to links*/
 html{
   scroll-behavior: smooth;
@@ -59,7 +53,7 @@ header h1 {
 /*Header links underline removal*/
 header a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: white;
 }
 
 /*nav display size*/
@@ -86,8 +80,8 @@ header nav ul li a {
 
  /*Header link styles changes when hovering*/
 header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: yellow;
+  color: blue;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -115,7 +109,8 @@ header nav ul li a:hover {
 
 .hero-cta img{
   position: relative;
-  height: 300px;
+  /*height: 300px;*/
+  height: 20rem;
   width: auto;;
 }
 
@@ -125,14 +120,18 @@ header nav ul li a:hover {
     word-wrap: wrap;
     grid-template-columns: 15% 85%;
     padding: 10px;
-    padding-left: 0;;
+    padding-left: 0;
+
+    
 }
 
  /*Main content grid items styles*/
 .grid-item{
     border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
+    padding:10px;
+
+    /*rem because now they change with screnn size*/
+    font-size: 1.25rem;
 }
 
   /*Content tags only styles*/
@@ -144,8 +143,9 @@ header nav ul li a:hover {
     background-position: 80%;
     width: 15%x;
     height: auto;
-    font-size: 3rem;
+    font-size: 1.50rem;
     word-wrap: wrap;
+    font-weight: bold;
 }
 
 /*The inner grid for worked applicatons*/
@@ -159,7 +159,7 @@ header nav ul li a:hover {
 /*Work grid image styles*/
 .work-grid img{
     width: 35%;
-    background-attachment:fixed;
+    background-attachment:relative;
 }
 
  /*Work grid link styles*/
@@ -179,7 +179,7 @@ header nav ul li a:hover {
   color: darkblue;
   width:75%;  
   text-align: right;     
-  align-items: center; 
+  align-items:flex-start; 
 }
 
 /*Work grid header on active*/
@@ -209,10 +209,62 @@ header nav ul li a:hover {
 /*Media queries for smaller screens*/
 @media screen and (max-width: 980px) {
 
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .hero-cta{
+    height: 250px;
+  }
+
+ .hero-cta img{
+    height: 250px;
+  }
+
+  .work-grid h3{
+    font-size:smaller;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
+  .tag{
+    overflow: hidden;
+  }
+
+  .contacts{
+    font-size: smaller;
+  }
 }
 
 @media screen and (max-width: 575px) {
+
+  .hero{
+    text-align: center;
+  }
+
+  .work-grid{
+    grid-template-columns: auto;
+  }
+
+  .item1{
+    grid-column: 1/1;
+  }
 }

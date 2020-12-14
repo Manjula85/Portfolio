@@ -1,14 +1,14 @@
 # My Portfolio
 
 ## Purpose
-A webiste that offers fitness training services.
+A webiste is a Portfolio.
 
 ## Built With
 * HTML
 * CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://manjula85.github.io/Portfolio-Manjula/
 
 ## Contribution
 Made with ❤️ by Manjula Guneratne

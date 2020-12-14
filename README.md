@@ -1,7 +1,7 @@
 # My Portfolio
 
 ## Purpose
-A webiste is a Portfolio.
+This is a website to showcase our ability to create a Portfolio online.
 
 ## Built With
 * HTML
